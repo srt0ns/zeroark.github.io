@@ -1,0 +1,165 @@
+html {
+    background-size: cover;
+    
+    /* Centra la imagen en el fondo */
+    background-position: center;
+
+    /* Fija el fondo para que no se desplace con el contenido de la página */
+    background-attachment: fixed;
+
+    /* Establece la imagen de fondo */
+    background-image: url(./bg.jpg);
+}
+body {
+    margin: 0px;
+}
+
+.zero {
+  font-size: 180px;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  font-family: 'Black Ops One', system-ui;
+  top: 40%; 
+  color:rgb(83, 2, 138);
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+	text-shadow:
+		0 0 5px rgb(255, 255, 255),
+		0 0 10px rgb(175, 56, 255),
+		0 0 20px rgb(255, 255, 255),
+		0 0 40px rgb(123, 22, 190),
+		0 0 80px rgb(123, 22, 190),
+		0 0 90px rgb(255, 255, 255),
+		0 0 100px rgb(70, 13, 108),
+		0 0 140px rgb(26, 0, 44),
+		0 0 180px rgb(43, 1, 72);
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+  }
+.btn {
+        margin: 10px; /* Agrega margen alrededor de cada botón */
+        width: 150px; /* Ajusta el ancho según tus necesidades */
+      }
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 50px;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 40px 165px;
+}
+
+
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: rgb(174, 1, 255);
+    font-weight: bold;
+  }
+  
+  .navbar-resp {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+    }
+    
+    .nav-list.show {
+      display: flex;
+    }
+  
+    .nav-list li {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .navbar-resp {
+      display: block;
+      color: rgb(174, 1, 255);
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+  .navbar-resp {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 765px) {
+    .contenedor-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .boton {
+      margin: 70px 0; /* Ajusta el margen para separar verticalmente los botones */
+
+    }
+}
